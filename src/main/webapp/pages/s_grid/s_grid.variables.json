@@ -1,0 +1,25 @@
+{
+  "FileServiceListFiles" : {
+    "_id" : "wm-FileServiceListFiles-wm.ServiceVariable-1498647056205",
+    "name" : "FileServiceListFiles",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.test.fileservice.FileService.WMFile",
+    "service" : "FileService",
+    "operation" : "listFiles",
+    "operationId" : "FileController_listFiles",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  }
+}

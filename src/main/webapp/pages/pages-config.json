@@ -1,0 +1,101 @@
+[ {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "admin",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "chart",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "chart1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "charts",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "chips",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "fda1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "first",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "footer",
+  "type" : "FOOTER",
+  "params" : [ ]
+}, {
+  "name" : "form",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "grid",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "grid1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "grid_chart",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "live_form",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "live_list",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "s1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "s_grid",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "test",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "test1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "TOPNAV",
+  "params" : [ ]
+} ]

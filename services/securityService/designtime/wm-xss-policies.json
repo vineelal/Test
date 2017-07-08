@@ -1,0 +1,67 @@
+{
+  "tagRules" : [ {
+    "name" : "ball",
+    "action" : "TRUNCATE"
+  }, {
+    "name" : "ul",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "b",
+    "action" : "FILTER"
+  }, {
+    "name" : "a",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "div",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "blockquote",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "noscript",
+    "action" : "REMOVE"
+  }, {
+    "name" : "script",
+    "action" : "REMOVE"
+  }, {
+    "name" : "br",
+    "action" : "TRUNCATE"
+  }, {
+    "name" : "i",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "li",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "iframe",
+    "action" : "REMOVE"
+  }, {
+    "name" : "frame",
+    "action" : "REMOVE"
+  }, {
+    "name" : "frameset",
+    "action" : "REMOVE"
+  }, {
+    "name" : "tt",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "p",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "noframes",
+    "action" : "REMOVE"
+  }, {
+    "name" : "bat",
+    "action" : "FILTER"
+  }, {
+    "name" : "em",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "ol",
+    "action" : "VALIDATE"
+  }, {
+    "name" : "wicket",
+    "action" : "FILTER"
+  } ],
+  "unknownTagAction" : "REMOVE"
+}

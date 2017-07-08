@@ -1,0 +1,9 @@
+<wm-page data-ng-controller="chart1PageController" pagetitle="Chart 1" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Variables.Employee.dataSet" xaxisdatakey="firstname" yaxisdatakey="empId"></wm-chart>
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart2" dataset="bind:Variables.FDA.dataSet" xaxisdatakey="results[0].term" yaxisdatakey="results[0].count"></wm-chart>
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart3" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart>
+        </wm-page-content>
+    </wm-content>
+</wm-page>

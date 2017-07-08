@@ -1,0 +1,19 @@
+{
+  "url" : null,
+  "domain" : null,
+  "rootDn" : "",
+  "userSearchPattern" : "(&(objectClass=user)(userPrincipalName={0}))",
+  "testUsername" : null,
+  "testPassword" : null,
+  "groupSearchDisabled" : false,
+  "roleProvider" : null,
+  "groupRoleAttribute" : "memberOf",
+  "roleModel" : null,
+  "roleEntity" : null,
+  "roleTable" : null,
+  "roleUsername" : null,
+  "roleProperty" : null,
+  "useRolesQuery" : false,
+  "roleQuery" : "",
+  "queryType" : "HQL"
+}
