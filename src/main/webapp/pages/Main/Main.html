@@ -10,6 +10,7 @@
             name="chips5" allowonlyselect="true"></wm-chips><wm-label padding="unset 0.5em" name="label1" caption="bind:Widgets.chips1.datavalue"></wm-label><wm-label padding="unset 0.5em" name="label2" caption="bind:Widgets.chips3.datavalue"></wm-label><wm-search dataset="bind:Variables.Employee.dataSet" displaylabel="bind:$[data[$i].firstname] + ' ' + $[data[$i].lastname]" displayimagesrc="picurl" datafield="All Fields" name="search4"></wm-search>-->
             <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" name="button1"></wm-button>
             <wm-chips name="chips1" dataset="bind:Variables.HrdbDepartmentData.dataSet" datafield="name" displayfield="name" displayimagesrc="name" readonly="false" datavalue="Sales"></wm-chips>
+            <wm-chips dataset="bind:Variables.HrdbDepartmentData.dataSet" datafield="name" displayfield="name" displayimagesrc="name" readonly="false" datavalue="Sales" name="chips2"></wm-chips>
         </wm-page-content>
     </wm-content>
 </wm-page>
