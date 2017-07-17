@@ -1,19 +1,19 @@
-<wm-page data-ng-controller="grid1PageController" pagetitle="Grid 1" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-grid title="Employee List" dataset="bind:Variables.Employee.dataSet" navigation="Basic" name="grid1" radioselect="false" multiselect="true">
-                <wm-grid-column binding="empId" caption="Emp Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-grid-column>
-                <wm-grid-column binding="firstname" caption="Firstname" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="lastname" caption="Lastname" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="street" caption="Street" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="city" caption="City" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="state" caption="State" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="zip" caption="Zip" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="birthdate" caption="Birthdate" type="date" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="picurl" caption="Picurl" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="jobTitle" caption="Job Title" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-            </wm-grid>
-            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Widgets.grid1.selecteditem"></wm-chart>
-        </wm-page-content>
-    </wm-content>
+<wm-page data-ng-controller="grid1PageController" pagetitle="Grid 1" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-table title="Employee List" dataset="bind:Variables.Employee.dataSet" navigation="Basic" name="grid1" radioselect="false" multiselect="true"> 
+                <wm-table-column binding="empId" caption="Emp Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                <wm-table-column binding="firstname" caption="Firstname" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="lastname" caption="Lastname" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="street" caption="Street" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="city" caption="City" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="state" caption="State" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="zip" caption="Zip" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="birthdate" caption="Birthdate" type="date" generator="assigned" edit-widget-type="date" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="picurl" caption="Picurl" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="jobTitle" caption="Job Title" type="string" generator="assigned" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+            </wm-table> 
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Widgets.grid1.selecteditem"></wm-chart> 
+        </wm-page-content> 
+    </wm-content> 
 </wm-page>

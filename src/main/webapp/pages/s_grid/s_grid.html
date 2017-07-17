@@ -1,18 +1,18 @@
-<wm-page data-ng-controller="s_gridPageController" pagetitle="S Grid" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Widgets.grid2.selecteditem"></wm-chart>
-            <wm-grid title="" dataset="bind:Variables.FileServiceListFiles.dataSet" navigation="Basic" name="grid2" radioselect="false" multiselect="true">
-                <wm-grid-column binding="inlinePath" caption="Inline Path" type="string" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="name" caption="Name" type="string" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="path" caption="Path" type="string" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="type" caption="Type" type="string" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="size" caption="Size" type="long" edit-widget-type="number" show="true" readonly="false"></wm-grid-column>
-            </wm-grid>
-            <wm-grid title="" dataset="bind:Variables.FDA.dataSet.results" navigation="Basic" name="grid1" radioselect="false" multiselect="true">
-                <wm-grid-column binding="count" caption="Count" type="integer" edit-widget-type="number" show="true" readonly="false"></wm-grid-column>
-                <wm-grid-column binding="term" caption="Term" type="string" edit-widget-type="text" show="true" readonly="false"></wm-grid-column>
-            </wm-grid>
-        </wm-page-content>
-    </wm-content>
+<wm-page data-ng-controller="s_gridPageController" pagetitle="S Grid" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Widgets.grid2.selecteditem"></wm-chart> 
+            <wm-table title="" dataset="bind:Variables.FileServiceListFiles.dataSet" navigation="Basic" name="grid2" radioselect="false" multiselect="true"> 
+                <wm-table-column binding="inlinePath" caption="Inline Path" type="string" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="name" caption="Name" type="string" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="path" caption="Path" type="string" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="type" caption="Type" type="string" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="size" caption="Size" type="long" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+            </wm-table> 
+            <wm-table title="" dataset="bind:Variables.FDA.dataSet.results" navigation="Basic" name="grid1" radioselect="false" multiselect="true"> 
+                <wm-table-column binding="count" caption="Count" type="integer" edit-widget-type="number" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="term" caption="Term" type="string" edit-widget-type="text" show="true" readonly="false"></wm-table-column> 
+            </wm-table> 
+        </wm-page-content> 
+    </wm-content> 
 </wm-page>

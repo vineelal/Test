@@ -1,24 +1,24 @@
-<wm-page data-ng-controller="grid_chartPageController" pagetitle="Grid Chart" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Variables.Employee.dataSet" yaxisdatakey="empId" xaxisdatakey="firstname"></wm-chart>
-            <wm-grid title="" dataset="bind:Widgets.chart1.selecteditem" navigation="Basic" name="grid2">
-                <wm-grid-column binding="tenantId" caption="Tenant Id" pcdisplay="true" mobiledisplay="true" type="integer"></wm-grid-column>
-                <wm-grid-column binding="zip" caption="Zip" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="street" caption="Street" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="state" caption="State" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="empId" caption="Emp Id" pcdisplay="true" mobiledisplay="true" type="integer"></wm-grid-column>
-                <wm-grid-column binding="picurl" caption="Picurl" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="lastname" caption="Lastname" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="firstname" caption="Firstname" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="password" caption="Password" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="city" caption="City" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-            </wm-grid>
-            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart2" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart>
-            <wm-grid title="" dataset="bind:Widgets.chart2.selecteditem" navigation="Basic" name="grid3">
-                <wm-grid-column binding="count" caption="Count" pcdisplay="true" mobiledisplay="true" type="integer"></wm-grid-column>
-                <wm-grid-column binding="term" caption="Term" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-            </wm-grid>
-        </wm-page-content>
-    </wm-content>
+<wm-page data-ng-controller="grid_chartPageController" pagetitle="Grid Chart" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" dataset="bind:Variables.Employee.dataSet" yaxisdatakey="empId" xaxisdatakey="firstname"></wm-chart> 
+            <wm-table title="" dataset="bind:Widgets.chart1.selecteditem" navigation="Basic" name="grid2"> 
+                <wm-table-column binding="tenantId" caption="Tenant Id" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column> 
+                <wm-table-column binding="zip" caption="Zip" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="street" caption="Street" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="state" caption="State" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="empId" caption="Emp Id" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column> 
+                <wm-table-column binding="picurl" caption="Picurl" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="lastname" caption="Lastname" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="firstname" caption="Firstname" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="password" caption="Password" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="city" caption="City" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+            </wm-table> 
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart2" dataset="bind:Variables.FDA.dataSet.results" xaxisdatakey="term" yaxisdatakey="count"></wm-chart> 
+            <wm-table title="" dataset="bind:Widgets.chart2.selecteditem" navigation="Basic" name="grid3"> 
+                <wm-table-column binding="count" caption="Count" pcdisplay="true" mobiledisplay="true" type="integer"></wm-table-column> 
+                <wm-table-column binding="term" caption="Term" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+            </wm-table> 
+        </wm-page-content> 
+    </wm-content> 
 </wm-page>

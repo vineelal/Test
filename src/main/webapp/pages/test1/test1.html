@@ -1,25 +1,25 @@
-<wm-page data-ng-controller="test1PageController" pagetitle="Test 1" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <!-- <wm-chips name="chips3" dataset="bind:Variables.Employee.dataSet" datafield="All Fields" displayfield="firstname" displayimagesrc="picurl" datavalue="bind:Variables.Employee.firstRecord"></wm-chips><wm-label padding="unset 0.5em" name="label2" caption="bind:Widgets.chips3.datavalue"></wm-label>-->
-            <!--<wm-chips name="chips2" dataset="bind:Variables.staticVariable1.dataSet" datafield="value" displayfield="key" show="false"></wm-chips><wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" xaxislabel="&amp;nbsp"></wm-chart>-->
-            <wm-chips name="chips2_1" dataset="bind:Variables.Employee.dataSet" datafield="firstname" displayfield="firstname" displayimagesrc="picurl" datavalue="Eric11" allowonlyselect="false"></wm-chips>
-            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="lastname" displayfield="firstname" displayimagesrc="picurl" datavalue="Lin11" name="chips3"></wm-chips>
-            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="lastname" displayfield="firstname" displayimagesrc="picurl" datavalue="Lin" name="chips4"></wm-chips>
-            <wm-chips name="chips5" dataset="Option 11, Option 22, Option 33"></wm-chips>
-            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="All Fields" displayfield="firstname" displayimagesrc="picurl" datavalue="bind:Variables.HrdbEmployeeData.firstRecord" name="chips4_1"></wm-chips>
-            <wm-grid title="Employee List" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="grid1">
-                <wm-grid-column binding="empId" caption="Emp Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-grid-column>
-                <wm-grid-column binding="firstname" caption="Firstname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="lastname" caption="Lastname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="street" caption="Street" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="city" caption="City" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="state" caption="State" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="zip" caption="Zip" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="birthdate" caption="Birthdate" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-grid-column>
-                <wm-grid-column binding="picurl" caption="Picurl" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-                <wm-grid-column binding="jobTitle" caption="Job Title" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-grid-column>
-            </wm-grid>
-        </wm-page-content>
-    </wm-content>
+<wm-page data-ng-controller="test1PageController" pagetitle="Test 1" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <!-- <wm-chips name="chips3" dataset="bind:Variables.Employee.dataSet" datafield="All Fields" displayfield="firstname" displayimagesrc="picurl" datavalue="bind:Variables.Employee.firstRecord"></wm-chips><wm-label padding="unset 0.5em" name="label2" caption="bind:Widgets.chips3.datavalue"></wm-label>--> 
+            <!--<wm-chips name="chips2" dataset="bind:Variables.staticVariable1.dataSet" datafield="value" displayfield="key" show="false"></wm-chips><wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" xaxislabel="&amp;nbsp"></wm-chart>--> 
+            <wm-chips name="chips2_1" dataset="bind:Variables.Employee.dataSet" datafield="firstname" displayfield="firstname" displayimagesrc="picurl" datavalue="Eric11" allowonlyselect="false"></wm-chips> 
+            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="lastname" displayfield="firstname" displayimagesrc="picurl" datavalue="Lin11" name="chips3"></wm-chips> 
+            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="lastname" displayfield="firstname" displayimagesrc="picurl" datavalue="Lin" name="chips4"></wm-chips> 
+            <wm-chips name="chips5" dataset="Option 11, Option 22, Option 33"></wm-chips> 
+            <wm-chips dataset="bind:Variables.Employee.dataSet" datafield="All Fields" displayfield="firstname" displayimagesrc="picurl" datavalue="bind:Variables.HrdbEmployeeData.firstRecord" name="chips4_1"></wm-chips> 
+            <wm-table title="Employee List" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="grid1"> 
+                <wm-table-column binding="empId" caption="Emp Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="firstname" caption="Firstname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="lastname" caption="Lastname" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="street" caption="Street" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="city" caption="City" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="state" caption="State" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="zip" caption="Zip" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="birthdate" caption="Birthdate" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column> 
+                <wm-table-column binding="picurl" caption="Picurl" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+                <wm-table-column binding="jobTitle" caption="Job Title" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column> 
+            </wm-table> 
+        </wm-page-content> 
+    </wm-content> 
 </wm-page>

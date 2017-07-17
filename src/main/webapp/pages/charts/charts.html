@@ -1,9 +1,11 @@
-<wm-page data-ng-controller="chartsPageController" pagetitle="Charts" name="page1">
-    <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
-            <wm-html name="html1"><span>{{data.x}}</span><span>{{data.y}}</span>
-            </wm-html>
-            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" content="<span>{{data.x}}</span><span>{{data.y}}</span>"></wm-chart>
-        </wm-page-content>
-    </wm-content>
+<wm-page data-ng-controller="chartsPageController" pagetitle="Charts" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-html name="html1"> 
+                <span>{{data.x}}</span> 
+                <span>{{data.y}}</span> 
+            </wm-html> 
+            <wm-chart type="Column" title="Column Chart" height="250px" iconclass="wi wi-bar-chart" name="chart1" content="<span>{{data.x}}</span><span>{{data.y}}</span>"></wm-chart> 
+        </wm-page-content> 
+    </wm-content> 
 </wm-page>
