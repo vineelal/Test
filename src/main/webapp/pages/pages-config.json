@@ -63,6 +63,10 @@
   "type" : "HEADER",
   "params" : [ ]
 }, {
+  "name" : "hello",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]

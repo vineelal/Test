@@ -12,6 +12,8 @@
             <wm-chips name="chips1" dataset="bind:Variables.HrdbDepartmentData.dataSet" datafield="name" displayfield="name" displayimagesrc="name" readonly="false" datavalue="Sales"></wm-chips>
             <wm-chips dataset="bind:Variables.HrdbDepartmentData.dataSet" datafield="name" displayfield="name" displayimagesrc="name" readonly="false" datavalue="Sales" name="chips2"></wm-chips>
             <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" name="button2"></wm-button>
+            <wm-fileupload name="fileupload1" service="FileService" operation="uploadFile"></wm-fileupload>
+            <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" name="button3" on-click="Variables.serviceVariable2.invoke()"></wm-button>
         </wm-page-content>
     </wm-content>
 </wm-page>

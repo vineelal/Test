@@ -16,6 +16,11 @@ Application.$controller("MainPageController", ["$scope", function($scope) {
 
 
     $scope.search1Focus = function($event, $isolateScope) {
+
+    };
+
+
+    $scope.serviceVariable2onSuccess = function(variable, data) {
         debugger;
         console.log('focus event');
     };
