@@ -50,10 +50,10 @@ public class Employee implements Serializable {
     private String role;
     private Integer managerId;
     private Integer tenantId;
+    private List<Vacation> vacations;
     private Department department;
     private Employee employeeByManagerId;
     private List<Employee> employeesForManagerId;
-    private List<Vacation> vacations;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -201,6 +201,16 @@ public class Employee implements Serializable {
         this.tenantId = tenantId;
     }
 
+    @JsonInclude(Include.NON_EMPTY)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "employee")
+    public List<Vacation> getVacations() {
+        return this.vacations;
+    }
+
+    public void setVacations(List<Vacation> vacations) {
+        this.vacations = vacations;
+    }
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "`DEPT_ID`", referencedColumnName = "`DEPT_ID`", insertable = false, updatable = false)
     public Department getDepartment() {
@@ -241,16 +251,6 @@ public class Employee implements Serializable {
 
     public void setEmployeesForManagerId(List<Employee> employeesForManagerId) {
         this.employeesForManagerId = employeesForManagerId;
-    }
-
-    @JsonInclude(Include.NON_EMPTY)
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "employee")
-    public List<Vacation> getVacations() {
-        return this.vacations;
-    }
-
-    public void setVacations(List<Vacation> vacations) {
-        this.vacations = vacations;
     }
 
     @Override

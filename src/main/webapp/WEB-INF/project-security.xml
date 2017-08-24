@@ -215,14 +215,11 @@
         <property name="filterProcessesUrl" value="/j_spring_security_check"/>
         <property name="usernameParameter" value="j_username"/>
         <property name="passwordParameter" value="j_password"/>
-        <property name="authenticationDetailsSource" ref="WMWebAuthenticationDetailsSource"/>
         <property name="rememberMeServices" ref="rememberMeServices"/>
     </bean>
     <bean class="org.springframework.security.web.authentication.www.BasicAuthenticationFilter" id="WMBasicAuthenticationFilter">
         <constructor-arg ref="authenticationManager"/>
-        <property name="authenticationDetailsSource" ref="WMWebAuthenticationDetailsSource"/>
     </bean>
-    <bean class="com.wavemaker.runtime.security.WMWebAuthenticationDetailsSource" id="WMWebAuthenticationDetailsSource"/>
     <bean class="com.wavemaker.runtime.security.WMAuthenticationEntryPoint" id="WMSecAuthEntryPoint">
         <constructor-arg value="/index.html"/>
     </bean>

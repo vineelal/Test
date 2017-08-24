@@ -8,6 +8,8 @@ package com.hrdb.service;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -32,7 +34,7 @@ public interface VacationService {
      * @param vacation Details of the Vacation to be created; value cannot be null.
      * @return The newly created Vacation.
      */
-	Vacation create(Vacation vacation);
+	Vacation create(@Valid Vacation vacation);
 
 
 	/**
@@ -62,7 +64,7 @@ public interface VacationService {
 	 * @return The updated Vacation.
 	 * @throws EntityNotFoundException if no Vacation is found with given input.
 	 */
-	Vacation update(Vacation vacation) throws EntityNotFoundException;
+	Vacation update(@Valid Vacation vacation) throws EntityNotFoundException;
 
     /**
 	 * Deletes an existing Vacation with the given id.

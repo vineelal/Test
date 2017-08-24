@@ -20,20 +20,6 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
-                <directory>services/fda/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>services/googleapis/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
                 <directory>services/hrdb/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -125,8 +111,6 @@
                         <configuration>
                             <sources>
                                 <source>services/FileService/src</source>
-                                <source>services/fda/src</source>
-                                <source>services/googleapis/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>

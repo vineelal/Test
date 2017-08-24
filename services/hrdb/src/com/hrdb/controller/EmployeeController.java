@@ -54,9 +54,9 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	@ApiOperation(value = "Creates a new Employee instance.")
-	@RequestMapping(method = RequestMethod.POST)
+@RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-	public Employee createEmployee(@RequestBody Employee employee) {
+public Employee createEmployee(@RequestBody Employee employee) {
 		LOGGER.debug("Create Employee with information: {}" , employee);
 
 		employee = employeeService.create(employee);
@@ -64,7 +64,6 @@ public class EmployeeController {
 
 	    return employee;
 	}
-
 
     @ApiOperation(value = "Returns the Employee instance associated with the given id.")
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)
@@ -153,15 +152,6 @@ public class EmployeeController {
         return employeeService.getAggregatedValues(aggregationInfo, pageable);
     }
 
-    @RequestMapping(value="/{id:.+}/employeesForManagerId", method=RequestMethod.GET)
-    @ApiOperation(value = "Gets the employeesForManagerId instance associated with the given id.")
-    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
-    public Page<Employee> findAssociatedEmployeesForManagerId(@PathVariable("id") Integer id, Pageable pageable) {
-
-        LOGGER.debug("Fetching all associated employeesForManagerId");
-        return employeeService.findAssociatedEmployeesForManagerId(id, pageable);
-    }
-
     @RequestMapping(value="/{id:.+}/vacations", method=RequestMethod.GET)
     @ApiOperation(value = "Gets the vacations instance associated with the given id.")
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
@@ -169,6 +159,15 @@ public class EmployeeController {
 
         LOGGER.debug("Fetching all associated vacations");
         return employeeService.findAssociatedVacations(id, pageable);
+    }
+
+    @RequestMapping(value="/{id:.+}/employeesForManagerId", method=RequestMethod.GET)
+    @ApiOperation(value = "Gets the employeesForManagerId instance associated with the given id.")
+    @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
+    public Page<Employee> findAssociatedEmployeesForManagerId(@PathVariable("id") Integer id, Pageable pageable) {
+
+        LOGGER.debug("Fetching all associated employeesForManagerId");
+        return employeeService.findAssociatedEmployeesForManagerId(id, pageable);
     }
 
     /**
